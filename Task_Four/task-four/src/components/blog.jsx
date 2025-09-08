@@ -1,6 +1,15 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+
+
+import techBlog from "../../src/assets/techBlog.jpg";
+import techBlogTwo from "../../src/assets/techBlogTwo.jpg";
+import travelBlogOne from "../../src/assets/Travel-Blogger.webp";
+import travelBlogTwo from "../../src/assets/travelBlog.jpg";
+import foodBlogThree from "../../src/assets/foodBlogThree.jpg";
+import foodBlogTwo from "../../src/assets/foodBlogTwo.webp";
+import foodBlogPhotography from "../../src/assets/Food-blog-photography.jpeg";
+import pinchOfYum from "../../src/assets/Pinch-of-Yum-Blog.png";
 
 const blogPosts = [
   {
@@ -10,7 +19,7 @@ const blogPosts = [
       "Exploring how generative AI is transforming creative industries, from art to code generation.",
     category: "tech",
     date: "October 28, 2023",
-    image: "../../src/assets/techBlog.jpg",
+    image: techBlog,
   },
   {
     id: 2,
@@ -19,7 +28,7 @@ const blogPosts = [
       "Deep dive into neural networks and their applications in modern software development.",
     category: "tech",
     date: "October 25, 2023",
-    image: "../../src/assets/techBlogTwo.jpg",
+    image: techBlogTwo,
   },
   {
     id: 3,
@@ -28,7 +37,7 @@ const blogPosts = [
       "A breathtaking journey through the misty mountains and serene lochs of Scotland.",
     category: "travel",
     date: "October 22, 2023",
-    image: "../../src/assets/Travel-Blogger.webp",
+    image: travelBlogOne,
   },
   {
     id: 4,
@@ -37,7 +46,7 @@ const blogPosts = [
       "Discovering the ancient temples and traditional culture of Japan's former capital.",
     category: "travel",
     date: "October 20, 2023",
-    image: "../../src/assets/travelBlog.jpg",
+    image: travelBlogTwo,
   },
   {
     id: 5,
@@ -46,7 +55,7 @@ const blogPosts = [
       "Tips and recipes for crafting a delicious and Instagram-worthy brunch spread.",
     category: "food",
     date: "October 18, 2023",
-    image: "../../src/assets/foodBlogThree.jpg",
+    image: foodBlogThree,
   },
   {
     id: 6,
@@ -55,7 +64,7 @@ const blogPosts = [
       "Learn the secrets of authentic Italian pasta making from traditional recipes.",
     category: "food",
     date: "October 15, 2023",
-    image: "../../src/assets/foodBlogTwo.webp",
+    image: foodBlogTwo,
   },
   {
     id: 7,
@@ -64,7 +73,7 @@ const blogPosts = [
       "Transform your morning routine with professional barista techniques and premium beans.",
     category: "food",
     date: "October 12, 2023",
-    image: "../../src/assets/Food-blog-photography.jpeg",
+    image: foodBlogPhotography,
   },
   {
     id: 8,
@@ -73,9 +82,10 @@ const blogPosts = [
       "A beginner's guide to baking perfect sourdough and artisan breads from scratch.",
     category: "food",
     date: "October 08, 2023",
-    image: "../../src/assets/Pinch-of-Yum-Blog.png",
+    image: pinchOfYum,
   },
 ];
+
 
 const blog = () => {
   const [activeFilter, setActiveFilter] = useState("all");
